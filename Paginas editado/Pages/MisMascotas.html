@@ -56,11 +56,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
           </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mascotas</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Mis Mascotas<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Eventos</a>
@@ -69,75 +69,66 @@
                 <a class="nav-link" href="#">Preguntas Frecuentes</a>
             </li>
           </ul>
-          <a text-align="left" class="nav-link"  href="#">Inicio Sesion</a>
-          <button type="button" class="btn btn-primary">Registrame</button>
+
 
         </div>
     </nav>
 
 
-  <div class="col-sm-12">
-      <div class="card-deck">
-      <div class="card">
-          <img src="../Img/perfil.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Ruffo</h5>
-            <h6 class="card-subtitle">Perro-Schnauzer</h6>
-            <a href="#" class="btn text-white btnCard">Editar Información</a>
-            <a href="#" class="btn text-white btnCard">Me perdi!</a>
-            <a href="#" class="btn text-white btnCard">Emergencia!</a>
-          </div>
-      </div>
-
-      <div class="card">
-          <img src="../Img/perfil.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Ruffo</h5>
-            <a href="#" class="btn text-white btnCard">Editar Información</a>
-            <a href="#" class="btn text-white btnCard">Me perdi!</a>
-            <a href="#" class="btn text-white btnCard">Emergencia!</a>
-          </div>
-      </div>
-
-      <div class="card">
-          <img src="../Img/perfil.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Ruffo</h5>
-            <a href="#" class="btn text-white btnCard">Editar Información</a>
-            <a href="#" class="btn text-white btnCard">Me perdi!</a>
-            <a href="#" class="btn text-white btnCard">Emergencia!</a>
-          </div>
-      </div>
-
-
+  <div class="col-12">
+    <div class="row">
+      <div class="container" id="contenedor">
       </div>
     </div>
   </div>
-  </div>
 
-  <!-- Floating Action Button like Google Material -->
-  <div class="menu pmd-floating-action"  role="navigation">
-  	<a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Supervisor Account">
-  		<span class="pmd-floating-hidden">Supervisor Account</span>
-  		<i class="material-icons">supervisor_account</i>
-  	</a>
-  	<a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Cloud Queue">
-  		<span class="pmd-floating-hidden">Cloud Queue</span>
-  		<i class="material-icons">cloud_queue</i>
-  	</a>
-  	<a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Headset">
-  		<span class="pmd-floating-hidden">Headset</span>
-  		<i class="material-icons">headset</i>
-  	</a>
-  	<a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Dialpad">
-  		<span class="pmd-floating-hidden">Dialpad</span>
-  		<i class="material-icons">dialpad</i>
-  	</a>
-  	<a class="pmd-floating-action-btn btn pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-primary" data-title="Add" href="javascript:void(0);">
-  		<span class="pmd-floating-hidden">Primary</span>
-  		<i class="material-icons pmd-sm">add</i>
-  	</a>
-  </div>
+
+<a class="btn-floating btn-lg "><i class="fas fa-plus"></i></a>
+
+
+
+  <script>
+  var cards =
+  [{lugar:"Paris", img:"http://luxurylaunches.com/wp-content/uploads/2014/03/paris.jpg", id:1,idbtn:1},
+  {lugar:"Umma", descripcion:"asdasdasd", img:"../Img/umma.jpg", id:2, idbtn:2},
+  {lugar:"Ruffo", descripcion:"asdasdasd", img:"../Img/ruffo.jpg", id:3, idbtn:3},
+  {lugar:"Mawi", descripcion:"asdasdasd", img:"../Img/mawi.jpg", id:4, idbtn:4},
+  {lugar:"Green", descripcion:"asdasdasd", img:"https://cdn.pixabay.com/photo/2017/09/16/19/33/parrot-2756488__340.jpg", id:5, idbtn:5},
+  {lugar:"Lola", descripcion:"asdasdasd", img:"https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_960_720.jpg", id:6, idbtn:6},
+  {lugar:"Uli", descripcion:"asdasdasd", img:"https://cdn.pixabay.com/photo/2016/01/29/20/54/dog-1168663__340.jpg", id:7, idbtn:7},
+  {lugar:"Forex", descripcion:"asdasdasd", img:"https://cdn.pixabay.com/photo/2014/08/21/14/51/pet-423398_960_720.jpg", id:8, idbtn:8},
+  {lugar:"Topi", descripcion:"asdasdasd", img:"https://cdn.pixabay.com/photo/2017/06/24/09/13/dog-2437110_960_720.jpg", id:9, idbtn:9}];
+
+
+
+  var longitud= cards.length;
+  var text="";
+  var count = 0;
+  var agregar = true;
+
+
+
+
+
+  for (i=0; i<longitud; i++){
+    text +="<div class='card' id='"+cards[i].id+"'>";
+    text +="<img src='"+cards[i].img+"'class='card-img-top'>";
+    text +="<div class='card-body'>";
+    text +="<h5 class='card-title'>"+cards[i].lugar+"</h5>";
+    text +="<h6 class='card-subtitle'>"+cards[i].descripcion +"</h6>";
+    text +="<a href='#' class='btn text-white btnCard'>Me perdi!</a>";
+    text +="<a href='#' class='btn text-white btnCard'>Información</a>";
+    text +="</div>";
+    text +="</div>";
+  }
+
+
+
+
+
+
+  document.getElementById("contenedor").innerHTML = text;
+  </script>
 
 
   </body>
