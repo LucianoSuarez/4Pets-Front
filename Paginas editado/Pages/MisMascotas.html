@@ -83,9 +83,17 @@
   </div>
 
 
-<a class="btn-floating btn-lg "><i class="fas fa-plus"></i></a>
+<a class="btn-floating btn-lg" data-toggle="tooltip" title="Añadir mascota" data-placement="left"><i class="material-icons">
+add
+</i></a>
 
 
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 
   <script>
   var cards =
@@ -109,17 +117,25 @@
 
 
 
+if (cards.length == 0) {
+  text += "<p>No hay nada para mostrar</p>"
+} else {
 
-  for (i=0; i<longitud; i++){
-    text +="<div class='card' id='"+cards[i].id+"'>";
-    text +="<img src='"+cards[i].img+"'class='card-img-top'>";
-    text +="<div class='card-body'>";
-    text +="<h5 class='card-title'>"+cards[i].lugar+"</h5>";
-    text +="<h6 class='card-subtitle'>"+cards[i].descripcion +"</h6>";
-    text +="<a href='#' class='btn text-white btnCard'>Me perdi!</a>";
-    text +="<a href='#' class='btn text-white btnCard'>Información</a>";
-    text +="</div>";
-    text +="</div>";
+
+    for (i=0; i<longitud; i++){
+      text +="<div class='card' id='"+cards[i].id+"'>";
+      text +="<img src='"+cards[i].img+"'class='card-img-top'>";
+      text +="<div class='card-body'>";
+      text +="<h5 class='card-title'>"+cards[i].lugar+"</h5>";
+      text +="<h6 class='card-subtitle'>"+cards[i].descripcion +"</h6>";
+      text +="<a href='#' class='btn text-white btnCard'>Me perdi!</a>";
+      text +="<a href='#' class='btn text-white btnCard'>Información</a>";
+      text +="</div>";
+      text +="</div>";
+
+
+    }
+
   }
 
 
@@ -128,6 +144,10 @@
 
 
   document.getElementById("contenedor").innerHTML = text;
+
+  $(function () {
+$('[data-toggle="tooltip"]').tooltip()
+})
   </script>
 
 
