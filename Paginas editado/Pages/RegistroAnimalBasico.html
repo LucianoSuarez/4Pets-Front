@@ -104,12 +104,12 @@
                               <div class="col-sm-6">
                                   <label for="validationTooltip01" class="col-form-label">*Nombre Completo </label>
                                   <input type="text" class="form-control" placeholder="Nombre de la mascota" maxlength="20" id="nombres" pattern="[A-Za-z]+" title="Solo letras. Tamaño maximo: 20" required>
-                                  <label for="validationTooltip01" class="col-form-label" >Responde al nombre </label>
-                                  <input type="text" class="form-control" placeholder="Responde a …" maxlength="20" pattern="[A-Za-z]+">
+                                  <label for="validationTooltip01" class="col-form-label" >*Responde al nombre </label>
+                                  <input type="text" class="form-control" placeholder="Responde a …" maxlength="20" pattern="[A-Za-z]+" required>
 
                                 <label for="validationTooltip01" class="col-form-label">*Especie:</label>
                                 <select class="browser-default custom-select" required >
-                                  <option selected value="">Seleccione una opción</option>
+                                  <option selected value="">*Seleccione una opción</option>
                                   <option value="1">Perro</option>
                                   <option value="2">Gato</option>
                                   <option value="3">Otros</option>
@@ -117,7 +117,7 @@
                                 <!-- Opcion1 -->
                                 <h6 class="margen2">*Sexo:</h6>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
+                                    <input type="radio" class="custom-control-input active" id="defaultGroupExample1" name="groupOfDefaultRadios">
                                     <label class="custom-control-label" for="defaultGroupExample1" >Desconozco</label>
                                   </div>
 
@@ -136,8 +136,8 @@
                               </div>
                               <div class="col-sm-6" >
                                   <div class="ingresofecha" id="fecha">
-                                      <label for="validationTooltip01" class="col-form-label" id="labelFecha">Fecha de nacimiento:</label>
-                                      <input id="datepicker" width="250" />
+                                      <label for="validationTooltip01" class="col-form-label" id="labelFecha">*Fecha de nacimiento:</label>
+                                      <input id="datepicker" width="250" required />
                                       <script>
                                           $('#datepicker').datepicker({
                                               showOtherMonths: true
@@ -164,7 +164,7 @@
                                     <button type="button" class="btn botones col " id="btnsalir">Salir</button>
                                   </div>
                                   <div>
-                                    <button type="submit" class="btn botones col "id="btnsig">más información</button>
+                                    <button href="file:///C:/Users/marti/Documents/GitHub/4Pets-Front/Paginas%20editado/Pages/RegistroAnimalDetallado.html" type="submit" class="btn botones col "id="btnsig">más información</button>
                                   </div>
 
                                 </div>

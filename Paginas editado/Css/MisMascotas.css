@@ -19,8 +19,10 @@
 }
 .btnCard {
   border-radius: 20px;
-  text-align: left;
+  text-align: center;
   background-color: #545871;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
 }
 .card-subtitle {
   margin-bottom: 10px;
@@ -43,7 +45,13 @@ body {
   color: #fff;
   border-radius: 50px;
 }
-.material-icons {
-  margin-left: 1px;
+
+body {
+  font-family: "Muli", sans-serif;
+}
+#btnAdd {
   margin-top: 9px;
+  margin-left: 2px;
+  height: 25px;
+  width: 25px;
 }
