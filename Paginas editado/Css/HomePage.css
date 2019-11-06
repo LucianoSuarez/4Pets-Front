@@ -44,7 +44,6 @@ section .section-title {
   border: none;
   background: #f7eceb;
   display: inline-block;
-  margin: 0px;
 }
 
 .image-flip:hover .backside,
@@ -84,8 +83,6 @@ section .section-title {
   -ms-transform: rotateY(0deg);
   z-index: 2;
   margin-bottom: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .backside {
@@ -101,8 +98,6 @@ section .section-title {
   -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
   -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
   box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .frontside,
@@ -143,4 +138,31 @@ section .section-title {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+}
+#SoyAnimal {
+  border-radius: 50%;
+  width: 220px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#textoSoyAnimal {
+  text-align: center;
+  font-family: "Asap", sans-serif;
+  width: 800px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 17px;
+}
+#col12 {
+  background-color: #f7eceb;
+  border-radius: 10px;
+}
+#navbar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+#carousel-example-2 {
 }
