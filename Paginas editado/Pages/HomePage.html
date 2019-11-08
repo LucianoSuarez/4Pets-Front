@@ -41,6 +41,7 @@
     <!-- FUENTES -->
     <link href="https://fonts.googleapis.com/css?family=Acme|Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Asap|Fira+Sans|IBM+Plex+Sans|Maven+Pro|Nanum+Gothic|Nunito|Nunito+Sans|Open+Sans|Overpass|Ropa+Sans|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
 
 
 
@@ -49,7 +50,7 @@
   <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark header" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
       <img src="../Img/Logo4PetsB.png" width="45" height="60" class="rounded" alt="Cinque Terre" id="imagen-navbar">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,6 +80,7 @@
 
 
     <!--Carousel Wrapper-->
+
     <div
       id="carousel-example-2"
       class="carousel slide carousel-fade"
@@ -107,7 +109,7 @@
             <div class="mask rgba-black-light"></div>
           </div>
           <div class="carousel-caption">
-            <h3 class="h3-responsive">Pensamos en ellos</h3>
+            <h3 id="firsth3" class="h3-responsive">Pensamos en ellos</h3>
           </div>
         </div>
         <div class="carousel-item">
@@ -121,7 +123,7 @@
             <div class="mask rgba-black-light"></div>
           </div>
           <div class="carousel-caption">
-            <h3 class="h3-responsive">Tanto como vos</h3>
+            <h3 id="firsth3" class="h3-responsive">Tanto como vos</h3>
 
           </div>
         </div>
@@ -136,7 +138,7 @@
             <div class="mask rgba-black-light"></div>
           </div>
           <div class="carousel-caption">
-            <h3 class="h3-responsive">Cada mascota tiene que estar con su dueño</h3>
+            <h3  id="Lasth3" class="h3-responsive">Por eso creamos 4Pets</h3>
           </div>
         </div>
       </div>
@@ -161,13 +163,14 @@
         <span class="sr-only">Next</span>
       </a>
       <!--/.Controls-->
+
     </div>
     <!--/.Carousel Wrapper-->
 </section>
 
 <section>
   <div class="container">
-  <h5 class="section-title h1">Quienes somos?</h5>
+  <h5 class="section-title h1">Soy Animal</h5>
   <div id="col12"class="col-12">
   <img id="SoyAnimal" src="../Img/SoyAnimal.png" alt="">
   <p id="textoSoyAnimal">Soy Animal nace con el objetivo de realizar campañas de concientización. Nuestro sueño es que Chaco sea una provincia proteccionista, que no existan perros y gatos abandonados y agonizando en nuestras calles, para ello creemos que fomentar la adopción y la esterilización es la mejor manera. Soñamos con caballos libres y personas con trabajo digno. Pensamos que muchas cosas podrían ser distintas si cambiamos nuestra de relacionarnos con la comida; por eso difundimos un estilo de vida VEGetariANO.
@@ -479,9 +482,114 @@ Los animales no tienen voz, pero tienen muchos amigos. Acá estamos para ser su 
                 </div>
             </div>
             <!-- ./Team member -->
+<!-- CONTACTO -->
+
+
+<!--Section: Contact v.2-->
+<section class="mb-4">
+
+  <h5 class="h1-responsive text-center my-4">CONTACTANOS</h5>
+    <div class="container"id="colform">
+    <!--Section heading-->
+
+    <!--Section description-->
+    <p class="textContactanos text-center w-responsive mx-auto mb-5">Tiene alguna consulta? puede visitar nuestras <a href="">Preguntas Frecuentes</a> En caso de no haber refutado su consulta escríbenos un mensaje para poder contactarnos con usted y responde todas sus consultas.</p>
+
+    <div class="row " >
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Ingrese su nombre</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Ingrese su Email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Asunto</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Redacte su mensaje aquí…</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="validateForm()">Enviar</a>
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Calle no existe 123, Resistencia, Chaco</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 54 362-4000000</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>ejemplodecorreo@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+  </div>
+</section>
+<!--Section: Contact v.2-->
+<!-- NUESTRO TRABAJOS SOY ANIMAL -->
+
+
 
         </div>
     </div>
 </section>
+<script src="../Js/validacionhome.js"></script>
   </body>
 </html>

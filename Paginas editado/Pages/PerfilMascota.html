@@ -11,7 +11,7 @@
     <meta name="author" content="4Pets">
 
     <!-- Title Page-->
-    <title>4Pets - Para las Mascotas</title>
+    <title>Perfil Mascota</title>
 
     <!-- Icons font CSS-->
 
@@ -42,9 +42,11 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Main CSS-->
-    <link href="../Css/RegistroAnimalBasico.css" rel="stylesheet" media="all">
-    <link href="../Css/RegistroAnimalConfirmacion.css" rel="stylesheet" >
+   <link href="../Css/BotonesSociales.css" rel="stylesheet">
+    <link href="../Css/PerfilMascota.css" rel="stylesheet" >
 </head>
 
 <body>
@@ -87,59 +89,110 @@
                       <div class="media" >
 
                       <div class="media-body centrar">
-                        <h1 id="titulo">¡Registra tu mascota!</h1>
+                        <h1 id="titulo">Mi Mascota</h1>
                       </div>
                       </div>
-                      <h2 id="h2"> ¡Genial!</h2>
-                      <h3 id="h3"> Confirmenos que todo este en orden</h3>
                     </div>
                     <div id="row">
+                      <div class="col-2 derecha">
                     <div class="row" >
-                      <img src="../Img/perfil.jpg" class="rounded-circle" alt="Cinque Terre" id="imgperfil">
+                      <img src="../Img/perfil.jpg" class="rounded-circle" alt="Cinque Terre" id="imgperfilanimal">
                     </div>
                     <h2 id="nombre">Ruffo</h4>
                     <h3 id="razaEspecie">Perro-Schnauzer</h4>
-                    <hr>
-                    <h3 id="nombre"> Información</h3>
+                    </div>
+
+                    <h3 class="padding140" id="nombre"> Información Mascota</h3>
                     <p id="p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <div class="row">
-                      <div class="col-sm-2">
+                      <div class="col-2">
                         <img src="../Img/macho.png" alt="" id="imgSexo">
                         <p id="textoSexo">Macho</p>
                       </div>
-                      <div class="col-sm-2">
+                      <div class="col-2">
                         <h2 id="edad">8</h2>
                         <p id="edadtexto">Años</p>
                       </div>
-                      <div class="col-sm-4" id="vet">
+                      <div class="col-4" id="vet">
                         <h4>Veterinarios</h4>
                         <p>Veterinario cabecera</p>
                         <p>Nombre veterinaria</p>
                         <p>Direccion</p>
                       </div>
-                      <div class="col-sm-4"id="idtitulo">
+
+                      <div class="col-4"id="idtitulo">
                         <h5 >El numero ID de su mascota es:</h5>
                         <strong>1234</strong>
                       </div>
-
                     </div>
                     </div>
+<!-- COLUMNA DOS DUEÑO-->
 
+<div id="row">
+    <div class="col-sm-2 derecha">
+  <div class="row" >
+    <img src="../Img/Fotodeperfil.jpg" class="rounded-circle" alt="Cinque Terre" id="imgperfildueño">
+  </div>
+  <h2  id="nombre">Pampita</h4>
+  <h3 id="razaEspecie">Resistencia, Chaco</h4>
+  </div>
+
+  <h3 class="padding140" id="nombre"> Información Dueño</h3>
+  <p id="p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="row container" id="Triplecolumna">
+
+      <div class="col-sm">
+        <h4 class="top-bottom"> Ubicacion: </h4>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2977.2166732585933!2d-58.98683802284158!3d-27.452840287592643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1572913942385!5m2!1ses-419!2sar" width="250" height="170" frameborder="0" id="ubicacion" allowfullscreen=""></iframe>
+      </div>
+      <div class="col-sm">
+        <div class="animated fadeInUp">
+          <h4 class="top-bottom">Redes Sociales:</h4>
+
+              <div class="col">
+                <a aria-label="facebook" href="#" class="btn btn-social btn-facebook btn-round btn-icon-only"><i class="fa fa-fw fa-facebook"></i></a>
+                <a aria-label="twitter" href="#" class="btn btn-social btn-twitter btn-round btn-icon-only"><i class="fa fa-fw fa-twitter"></i> </a>
+                <a aria-label="googleplus" href="#" class="btn btn-social btn-googleplus btn-round btn-icon-only"><i class="fa fa-fw fa-google-plus"></i></a>
+                <a aria-label="instagram" href="#" class="btn btn-social btn-instagram btn-round btn-icon-only"><i class="fa fa-fw fa-instagram"></i></a>
+             </div>
+
+          </div>
+      </div>
+      <div class="col-sm">
+        <h4 class="top-bottom">Contacto:</h4>
+
+          <div class="animated fadeInDown PaddingDatos"><size=2><strong>Nº Telefonico:</strong> <br> </size> <SIZE=3>+54362-4547608 </SIZE></div>
+        <hr>
+           <div class="animated fadeInDown PaddingDatos"><size=2><strong>E-mail:</strong> <br> </size> </size>Pampita@gmail.com</size></div>
+        <hr>
+           <div class="animated fadeInDown PaddingDatos"><size=2><strong>Ubicación:</strong> <br> </size> </size>Resistencia, Chaco</size></div>
+
+      </div>
+
+  </div>
+
+  <div class="row">
+
+
+          <div class="col align-items-end botonera">
+              <div style="float: left;">
+                <button type="button" class="btn botones col " id="btnsalir">Salir</button>
+              </div>
+              <div style="float: right;">
+                <button type="button" class="btn botones col " id="btneditar">Editar</button>
+              </div>
+
+            </div>
+          </div>
+
+  </div>
+
+  </div>
+  </div>
                     </div>
 
                       </div>
-                      <div class="row col align-items-end botonera">
-                          <div>
-                            <button type="button" class="btn botones col " id="btnsalir">Salir</button>
-                          </div>
-                          <div>
-                            <button type="button" class="btn botones col " id="btneditar">Editar</button>
-                          </div>
-                          <div>
-                            <button type="submit" class="btn botones col "id="btnsig">Confirmar</button>
-                          </div>
 
-                        </div>
                       </div>
                       </div>
                       </div>
@@ -185,9 +238,7 @@
 
 
 
-                   
+
 </body>
 
 </html>
-
-
