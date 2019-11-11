@@ -81,6 +81,15 @@
   <div class="col-12">
     <div class="row">
       <div class="container" id="contenedor">
+        <div class='card' id=''>
+        <img src='../Img/umma.jpg'class='card-img-top'>
+        <div class='card-body'>
+        <h5 class='card-title'>Umma</h5>
+        <h6 class='card-subtitle'>asdasdasd</h6>
+        <a href='#' class='btn text-white btnCard'>Me perdi!</a>
+        <a href='#' class='btn text-white btnCard'>Información</a>
+        </div>
+        </div>
       </div>
     </div>
   </div>
@@ -89,62 +98,6 @@
 <a href="file:///C:/Users/marti/Documents/GitHub/4Pets-Front/Paginas%20editado/Pages/RegistroAnimalBasico.html"class="btn-floating btn-lg" data-toggle="tooltip" title="Añadir mascota" data-placement="left"><img id="btnAdd" src="../Img/white.png" alt=""></a>
 
 
-
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
-
-  <script>
-  var cards =
-  [{lugar:"Paris", img:"http://luxurylaunches.com/wp-content/uploads/2014/03/paris.jpg", id:1,idbtn:1},
-  {lugar:"Umma", descripcion:"asdasdasd", img:"../Img/umma.jpg", id:2, idbtn:2},
-  {lugar:"Ruffo", descripcion:"asdasdasd", img:"../Img/ruffo.jpg", id:3, idbtn:3},
-  {lugar:"Mawi", descripcion:"asdasdasd", img:"../Img/mawi.jpg", id:4, idbtn:4},
-  {lugar:"Green", descripcion:"asdasdasd", img:"https://cdn.pixabay.com/photo/2017/09/16/19/33/parrot-2756488__340.jpg", id:5, idbtn:5},
-  {lugar:"Lola", descripcion:"asdasdasd", img:"https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_960_720.jpg", id:6, idbtn:6},
-  {lugar:"Uli", descripcion:"asdasdasd", img:"https://cdn.pixabay.com/photo/2016/01/29/20/54/dog-1168663__340.jpg", id:7, idbtn:7},
-  {lugar:"Forex", descripcion:"asdasdasd", img:"https://cdn.pixabay.com/photo/2014/08/21/14/51/pet-423398_960_720.jpg", id:8, idbtn:8},
-  {lugar:"Topi", descripcion:"asdasdasd", img:"https://cdn.pixabay.com/photo/2017/06/24/09/13/dog-2437110_960_720.jpg", id:9, idbtn:9}];
-
-
-
-  var longitud= cards.length;
-  var text="";
-  var count = 0;
-  var agregar = true;
-
-
-
-
-if (cards.length == 0) {
-  text += "<p>No hay nada para mostrar</p>"
-} else {
-
-
-    for (i=0; i<longitud; i++){
-      text +="<div class='card' id='"+cards[i].id+"'>";
-      text +="<img src='"+cards[i].img+"'class='card-img-top'>";
-      text +="<div class='card-body'>";
-      text +="<h5 class='card-title'>"+cards[i].lugar+"</h5>";
-      text +="<h6 class='card-subtitle'>"+cards[i].descripcion +"</h6>";
-      text +="<a href='#' class='btn text-white btnCard'>Me perdi!</a>";
-      text +="<a href='#' class='btn text-white btnCard'>Información</a>";
-      text +="</div>";
-      text +="</div>";
-
-
-    }
-
-  }
-
-
-
-
-
-
-  document.getElementById("contenedor").innerHTML = text;
 
 
   </script>
